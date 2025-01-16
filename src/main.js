@@ -42,7 +42,7 @@ document.querySelector("#app").innerHTML = `
       </div>
 
       <div id="project-row">
-      Model 2
+      2
         <div class="three-model">
           <div id="model2"></div>
         </div>
@@ -60,7 +60,7 @@ document.querySelector("#app").innerHTML = `
       </div>
 
       <div id="project-row">
-      Model 3
+      3
         <div class="three-model">
           <div id="model3"></div>
         </div>
