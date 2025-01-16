@@ -22,10 +22,6 @@ export function createThreeScene(containerSelector, objPath) {
   renderer.setSize(container.clientWidth, container.clientHeight);
   container.appendChild(renderer.domElement);
 
-  // Add grid helper
-  const gridHelper = new THREE.GridHelper(10, 10, 0x000000, 0x808080);
-  scene.add(gridHelper);
-
   // Add lighting
   const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
   directionalLight.position.set(5, 5, 5);
