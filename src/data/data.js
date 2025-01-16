@@ -1,12 +1,12 @@
 // CUSTOMIZE THIS FILE TO ADD YOUR OWN DATA
 
 const data = {
-    name: "John Doe",
+    name: "ZyadR",
     bio: "Undergraduate Architectural Student at University of Calgary passionate about building tools to make homes more affordable.",
     contact: {
-        email: "john.doe@gmail.com",
+        email: "z@gmail.com",
         phone: "+12345678910",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "www.linkedin.com/in/zyadrachdi",
         github: "https://www.github.com/",
     }
 }
