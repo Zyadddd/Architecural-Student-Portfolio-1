@@ -2,7 +2,7 @@
 
 const data = {
     name: "YADZZ",
-    bio: "Undergraduate Architectural Student at University of Calgary passionate about building tools to make homes more affordable.",
+    bio: "digital scrapbook.",
     contact: {
         email: "YAYZ@YADZ.com",
         phone: "+12345678910",
