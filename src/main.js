@@ -25,7 +25,7 @@ document.querySelector("#app").innerHTML = `
 
     <section id="projects">
       <div id="project-row">
-      Model 1
+      1
         <div class="three-model">
           <div id="model1"></div>
         </div>
