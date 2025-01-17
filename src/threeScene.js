@@ -19,6 +19,7 @@ export function createThreeScene(containerSelector, objPath) {
   camera.position.set(2, 2, 5);
 
   const renderer = new THREE.WebGLRenderer({ antialias: true },{ alpha: true });
+  renderer.setClearColor( 0x000000, 0 ); // the default
   renderer.setSize(container.clientWidth, container.clientHeight);
   container.appendChild(renderer.domElement);
   
