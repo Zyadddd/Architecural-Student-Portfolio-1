@@ -51,7 +51,7 @@ export function createThreeScene(containerSelector, objPath) {
       object.traverse((child) => {
         if (child.isMesh) {
           child.geometry.computeVertexNormals();
-          child.material = new THREE.MeshStandardMaterial({
+          child.material = new THREE.MeshNormalMaterial({
             color: 0x000000, // Default material color
             wireframe: false, // toggle wireframe
             transparent: false, // toggle transparency
