@@ -14,6 +14,15 @@ const trees = [
   "./treeDrawings/tree2.jpg",
   "./treeDrawings/tree3.jpg",
   "./treeDrawings/tree4.jpg",
+
+];
+
+const element = [
+  "./treeDrawings/tree1.jpg",
+  "./treeDrawings/tree2.jpg",
+  "./treeDrawings/tree3.jpg",
+  "./treeDrawings/tree4.jpg",
+
 ];
 
 document.querySelector("#app").innerHTML = `
