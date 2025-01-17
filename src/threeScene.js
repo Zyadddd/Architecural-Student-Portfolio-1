@@ -1,8 +1,6 @@
 import * as THREE from "three";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { BasicDepthPacking } from '../constants.js';
-import { Material } from './Material.js';
 
 export function createThreeScene(containerSelector, objPath) {
   // Target container for the 3D model
