@@ -1,6 +1,8 @@
 import * as THREE from "three";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { BasicDepthPacking } from '../constants.js';
+import { Material } from './Material.js';
 
 export function createThreeScene(containerSelector, objPath) {
   // Target container for the 3D model
@@ -22,7 +24,7 @@ export function createThreeScene(containerSelector, objPath) {
   renderer.setSize(container.clientWidth, container.clientHeight);
   container.appendChild(renderer.domElement);
   
-  const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+  const material = new THREE.MeshDepthMaterial( { color: 0x00ff00 } );
 
   // Add lighting
   const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
