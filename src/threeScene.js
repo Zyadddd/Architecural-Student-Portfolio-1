@@ -24,7 +24,6 @@ export function createThreeScene(containerSelector, objPath) {
   renderer.setSize(container.clientWidth, container.clientHeight);
   container.appendChild(renderer.domElement);
   
-  const material = new THREE.MeshDepthMaterial( { color: 0x00ff00 } );
 
   // Add lighting
   const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
