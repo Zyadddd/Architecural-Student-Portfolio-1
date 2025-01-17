@@ -1,7 +1,7 @@
 // CUSTOMIZE THIS FILE TO ADD YOUR OWN DATA
 
 const data = {
-    name: "YADZZ",
+    name: "YADZ",
     bio: "digital scrapbook.",
     contact: {
         email: "YAYZ@YADZ.com",
