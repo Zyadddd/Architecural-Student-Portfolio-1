@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import {}
+
 export function createThreeScene(containerSelector, objPath) {
   // Target container for the 3D model
   const container = document.querySelector(containerSelector);
@@ -54,7 +54,7 @@ export function createThreeScene(containerSelector, objPath) {
           child.material = new THREE.MeshStandardMaterial({
             color: 0x000000, // Default material color
             wireframe: false, // toggle wireframe
-            transparent: true, // toggle transparency
+            transparent: false, // toggle transparency
             opacity: 0.5, // change level of transparency
           });
         }
