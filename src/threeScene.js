@@ -8,7 +8,7 @@ export function createThreeScene(containerSelector, objPath) {
 
   // Initialize scene, camera, and renderer
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0xd3d3d3);
+  scene.background = new THREE.Color(0x000000, 0)
 
   const camera = new THREE.PerspectiveCamera(
     75,
