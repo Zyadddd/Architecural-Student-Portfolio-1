@@ -35,8 +35,11 @@ document.querySelector("#app").innerHTML = `
     <section id="projects">
       <div id="project-row">
       1
-        <div class="three-model">
-          <div id="model1"></div>
+        <div class="video-container">
+          <video controls>
+            <source src="/videos/project1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div id="images-description">
           <div id="images">
@@ -52,8 +55,11 @@ document.querySelector("#app").innerHTML = `
 
       <div id="project-row">
       2
-        <div class="three-model">
-          <div id="model2"></div>
+        <div class="video-container">
+          <video controls>
+            <source src="/videos/project2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div id="images-description">
           <div id="images">
@@ -70,8 +76,11 @@ document.querySelector("#app").innerHTML = `
 
       <div id="project-row">
       3
-        <div class="three-model">
-          <div id="model3"></div>
+        <div class="video-container">
+          <video controls>
+            <source src="/videos/project3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div id="images-description">
           <div id="images">
@@ -98,8 +107,3 @@ document.querySelector("#app").innerHTML = `
     </ul>
   </main>
 `;
-
-// Create three.js scenes for each
-createThreeScene("#model1", "/3DModels/project1/cube.obj");
-createThreeScene("#model2", "/3DModels/project2/tree.obj");
-createThreeScene("#model3", "/3DModels/project3/cottage.obj");
