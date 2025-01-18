@@ -35,11 +35,8 @@ document.querySelector("#app").innerHTML = `
     <section id="projects">
       <div id="project-row">
       1
-        <div class="video-container">
-          <video controls>
-            <source src="/videos/project1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+        <div class="image-container">
+          <img src="/images/project1.jpg" alt="Project 1 Image" />
         </div>
         <div id="images-description">
           <div id="images">
@@ -50,47 +47,6 @@ document.querySelector("#app").innerHTML = `
               .join("")}
           </div>
           <h4 id="description">A cubic 3D model is a geometric representation of a cube, consisting of six equal square faces joined at right angles. Each edge of the cube is of equal length, forming a symmetrical, rigid structure. The model can be textured, colored, or transparent, and it may include variations such as beveled edges or hollow interiors, depending on its intended purpose in design, animation, or engineering.</h4>
-        </div>
-      </div>
-
-      <div id="project-row">
-      2
-        <div class="video-container">
-          <video controls>
-            <source src="/videos/project2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div id="images-description">
-          <div id="images">
-            ${trees
-              .map(
-                (trees, index) =>
-                  `<img src="${trees}" alt="tree${index + 1}" />`
-              )
-              .join("")}
-          </div>
-          <h4 id="description">A 3D tree model is a geometric representation of a tree, featuring a trunk, branches, and foliage. The trunk is typically cylindrical, with textured bark, while the branches extend outward to support leaves or a canopy. It may include roots or flowers for added detail.</h4>
-        </div>
-      </div>
-
-      <div id="project-row">
-      3
-        <div class="video-container">
-          <video controls>
-            <source src="/videos/project3.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div id="images-description">
-          <div id="images">
-            ${cubes
-              .map(
-                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
-              )
-              .join("")}
-          </div>
-          <h4 id="description">A 3D house model is a geometric representation of a house, featuring walls, a roof, and windows. It often includes additional details such as doors, chimneys, and balconies, with textures like brick, wood, or stucco to enhance realism. The interior may also feature rooms, furniture, and lighting for a more detailed design.</h4>
         </div>
       </div>
     </section>
