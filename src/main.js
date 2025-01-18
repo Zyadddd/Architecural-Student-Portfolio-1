@@ -32,7 +32,7 @@ document.querySelector("#app").innerHTML = `
 
     <section id="projects">
       <div id="project-row" style="width: 100%; display: flex; flex-direction: row; align-items: center; flex-wrap: wrap;">
-        <div class="image-container" style="width: 150%; height: auto; display: flex; justify-content: center;">
+        <div class="image-container" style="width: 200%; height: auto; display: flex; justify-content: center;">
           <img src="./cubeDrawings/A1_DSGN313.gif" alt="Project 1 Image" style="width: 500%; height: auto;" />
         </div>
         <div id="images-description" style="width: 50%; display: flex; flex-direction: column; align-items: center;">
