@@ -38,16 +38,6 @@ document.querySelector("#app").innerHTML = `
         <div class="three-model">
           <div id="model1"></div>
         </div>
-
-        <div class="media-container">
-    <img src="./treeDrawings/tree1.jpg" alt="Description of image" class="media-item">
-    <video controls class="media-item">
-        <source src="public\3DModels\A1 Media\Rachdi_Zyad_A1_DSGN313.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <audio controls class="media-item">
-        <source src="path/to/audio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
     </audio>
 </div>
         <div id="images-description">
