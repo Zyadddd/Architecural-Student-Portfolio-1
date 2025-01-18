@@ -31,7 +31,7 @@ document.querySelector("#app").innerHTML = `
     </section>
 
     <section id="projects">
-      <div id="project-row" style="width: 100%;">
+      <div id="project-row" style="width: 300%;">
         <div class="image-container" style="width: auto; height: auto;">
           <img src="./cubeDrawings/A1_DSGN313.gif" alt="Project 1 Image" style="max-width: 400%; height: auto;" />
         </div>
