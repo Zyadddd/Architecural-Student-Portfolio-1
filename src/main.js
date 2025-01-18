@@ -33,10 +33,10 @@ document.querySelector("#app").innerHTML = `
     </section>
 
     <section id="projects">
-      <div id="project-row">
+      <div id="project-row" style="width: 100%;">
       1
-        <div class="image-container">
-          <img src="/images/project1.jpg" alt="Project 1 Image" />
+        <div class="image-container" style="width: auto; height: auto;">
+          <img src="/images/project1.jpg" alt="Project 1 Image" style="max-width: 100%; height: auto;" />
         </div>
         <div id="images-description">
           <div id="images">
