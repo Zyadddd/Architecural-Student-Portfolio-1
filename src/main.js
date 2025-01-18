@@ -2,7 +2,7 @@ import "./style.css";
 import data from "./data/data";
 import { createThreeScene } from "./threeScene";
 
-const cubes = [
+const media = [
   "./cubeDrawings/cube1.webp",
   "./cubeDrawings/cube2.webp",
   "./cubeDrawings/cube3.webp",
@@ -37,9 +37,9 @@ document.querySelector("#app").innerHTML = `
         </div>
         <div id="images-description" style="width: 50%; display: flex; flex-direction: column; align-items: center;">
           <div id="images" style="display: flex; justify-content: center; flex-wrap: wrap;">
-            ${cubes
+            ${media
               .map(
-                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" style="margin: 5px;" />`
+                (item, index) => `<img src="${item}" alt="media${index + 1}" style="margin: 5px;" />`
               )
               .join("")}
           </div>
