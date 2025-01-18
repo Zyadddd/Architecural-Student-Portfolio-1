@@ -1,6 +1,6 @@
 import "./style.css";
 import data from "./data/data";
-import { createThreeScene } from "./threeScene";
+//import { createThreeScene } from "./threeScene";
 
 const cubes = [
   "./cubeDrawings/cube1.webp",
