@@ -36,7 +36,7 @@ document.querySelector("#app").innerHTML = `
       <div id="project-row" style="width: 100%;">
       1
         <div class="image-container" style="width: auto; height: auto;">
-          <img src="C:/Users/zyadr/OneDrive - University of Calgary/School/WNTR25/DSGN313/Portfolio/Architecural-Student-Portfolio-1/public/cubeDrawings/A1_DSGN313.gif" alt="Project 1 Image" style="max-width: 100%; height: auto;" />
+          <img src="./cubeDrawings/A1_DSGN313.gif" alt="Project 1 Image" style="max-width: 100%; height: auto;" />
         </div>
         <div id="images-description">
           <div id="images">
