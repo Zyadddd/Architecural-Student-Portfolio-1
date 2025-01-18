@@ -85,21 +85,21 @@ h1 {
   padding-top: 5em;
 }
 
-.three-model {
+/*.three-model {*/
   /* Styling for project models */
-  display: flex;
+  /*display: flex;
   justify-content: center;
   align-items: center;
-}
+}*/
 
-#model1,
+/*#model1,
 #model2,
 #model3 {
   height: 300px;
   width: 300px;
   margin-right: 3em;
   margin-left: 6em;
-}
+}*/
 
 img {
   /* Image dimensions and margin */
