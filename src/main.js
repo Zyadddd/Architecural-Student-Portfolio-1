@@ -3,7 +3,7 @@ import data from "./data/data";
 //import { createThreeScene } from "./threeScene";
 
 const cubes = [
-  "./cubeDrawings/cube1.webp",
+  "public\3DModels\A1 Media\Rachdi_Zyad_A1_DSGN313.mp4",
   "./cubeDrawings/cube2.webp",
   "./cubeDrawings/cube3.webp",
   "./cubeDrawings/cube4.webp",
