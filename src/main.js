@@ -38,8 +38,6 @@ document.querySelector("#app").innerHTML = `
         <div class="three-model">
           <div id="model1"></div>
         </div>
-    </audio>
-</div>
         <div id="images-description">
           <div id="images">
             ${cubes
