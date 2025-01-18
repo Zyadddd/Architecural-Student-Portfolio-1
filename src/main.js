@@ -1,6 +1,6 @@
 import "./style.css";
 import data from "./data/data";
-import { createThreeScene } from "./threeScene";
+//import { createThreeScene } from "./threeScene";
 
 const media = [
   "./cubeDrawings/cube1.webp",
@@ -9,19 +9,6 @@ const media = [
   "./cubeDrawings/cube4.webp",
 ];
 
-const trees = [
-  "./treeDrawings/tree1.jpg",
-  "./treeDrawings/tree2.jpg",
-  "./treeDrawings/tree3.jpg",
-  "./treeDrawings/tree4.jpg",
-];
-
-const element = [
-  "./treeDrawings/tree1.jpg",
-  "./treeDrawings/tree2.jpg",
-  "./treeDrawings/tree3.jpg",
-  "./treeDrawings/tree4.jpg",
-];
 
 document.querySelector("#app").innerHTML = `
   <main id="container">
