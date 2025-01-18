@@ -31,11 +31,11 @@ document.querySelector("#app").innerHTML = `
     </section>
 
     <section id="projects">
-      <div id="project-row" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
-        <div class="image-container" style="width: 100%; height: auto; display: flex; justify-content: center;">
+      <div id="project-row" style="width: 100%; display: flex; flex-direction: row; align-items: center; flex-wrap: wrap;">
+        <div class="image-container" style="width: 50%; height: auto; display: flex; justify-content: center;">
           <img src="./cubeDrawings/A1_DSGN313.gif" alt="Project 1 Image" style="max-width: 80%; height: auto;" />
         </div>
-        <div id="images-description" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+        <div id="images-description" style="width: 50%; display: flex; flex-direction: column; align-items: center;">
           <div id="images" style="display: flex; justify-content: center; flex-wrap: wrap;">
             ${cubes
               .map(
