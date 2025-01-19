@@ -157,7 +157,7 @@ img {
 }
 
 #modal span {
-  position: absolute;
+  position: static;
   top: 20px;
   right: 35px;
   color: #f1f1f1;
