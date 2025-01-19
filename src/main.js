@@ -3,11 +3,11 @@ import data from "./data/data";
 //import { createThreeScene } from "./threeScene";
 
 const media = [
-  "/public/A1/Rachdi_Zyad_A1.1_DSGN313.png",
-  "/public/A1/Rachdi_Zyad_A1.1_DSGN313_Extraction1.png",
-  "/public/A1/Rachdi_Zyad_A1.1_DSGN313_Extraction2.png",
-  "/public/A1/Rachdi_Zyad_A1.1_DSGN313_Extraction3.png",
-  "/public/A1/Rachdi_Zyad_A1.1_DSGN313_Extraction4.png",
+  "./A1/Rachdi_Zyad_A1.1_DSGN313.png",
+  "./A1/Rachdi_Zyad_A1.1_DSGN313_Extraction1.png",
+  "./A1/Rachdi_Zyad_A1.1_DSGN313_Extraction2.png",
+  "./A1/Rachdi_Zyad_A1.1_DSGN313_Extraction3.png",
+  "./A1/Rachdi_Zyad_A1.1_DSGN313_Extraction4.png",
 ];
 
 document.querySelector("#app").innerHTML = `
@@ -20,7 +20,7 @@ document.querySelector("#app").innerHTML = `
     <section id="projects">
       <div id="project-row" style="width: 100%; display: flex; flex-direction: row; align-items: center; flex-wrap: wrap;">
         <div class="image-container" style="width: 50%; height: auto; display: flex; justify-content: center;">
-          <img src="/public/cubeDrawings/A1_DSGN313.gif" alt="Project 1 Image" style="width: 50%; height: auto;" />
+          <img src="./cubeDrawings/A1_DSGN313.gif" alt="Project 1 Image" style="width: 50%; height: auto;" />
         </div>
         <div id="images-description" style="width: 50%; display: flex; flex-direction: column; align-items: center;">
           <h4 id="description" style="text-align: center; max-width: 800px;">A cubic 3D model is a geometric representation of a cube, consisting of six equal square faces joined at right angles. Each edge of the cube is of equal length, forming a symmetrical, rigid structure. The model can be textured, colored, or transparent, and it may include variations such as beveled edges or hollow interiors, depending on its intended purpose in design, animation, or engineering.</h4>
