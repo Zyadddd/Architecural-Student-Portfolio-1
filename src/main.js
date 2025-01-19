@@ -1,10 +1,5 @@
-const link = document.createElement("link");
-link.rel = "stylesheet";
-link.type = "text/css"; // Ensure the correct MIME type is set
-link.href = "./style.css";
-document.head.appendChild(link);
-console.log("CSS imported!");
-import data from "./data/data.js"; 
+import "./style.css";
+import data from "./data/data.json"; 
 // Ensure the correct file extension is used
 //import { createThreeScene } from "./threeScene";
 
