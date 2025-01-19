@@ -1,5 +1,5 @@
 import "./style.css";
-import data from "./data/data.json"; // Ensure the correct file extension is used
+import data from "./data/data.js"; // Ensure the correct file extension is used
 //import { createThreeScene } from "./threeScene";
 
 const media = [
