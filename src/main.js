@@ -29,7 +29,7 @@ document.querySelector("#app").innerHTML = `
       <div id="images" style="display: flex; justify-content: center; flex-wrap: wrap;">
         ${media
           .map(
-            (item, index) => `<img src="${item}" alt="media${index + 1}" style="margin: 5px; width: 200px; height: auto;" />`
+            (item, index) => `<img src="${item}" alt="media${index + 1}" style="margin: 5px; width: 250px; height: auto;" />`
           )
           .join("")}
       </div>
