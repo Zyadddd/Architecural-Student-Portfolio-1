@@ -20,7 +20,7 @@ document.querySelector("#app").innerHTML = `
     <section id="projects">
       <div id="project-row" style="width: 100%; display: flex; flex-direction: row; align-items: center; flex-wrap: wrap;">
         <div class="image-container" style="width: 50%; height: auto; display: flex; justify-content: center;">
-          <img src="./cubeDrawings/A1_DSGN313.gif" alt="Project 1 Image" style="width: 50%; height: auto;" />
+          <img src="./cubeDrawings/A1_DSGN313.gif" alt="Project 1 Image" style="width: 75%; height: auto;" />
         </div>
         <div id="images-description" style="width: 50%; display: flex; flex-direction: column; align-items: center;">
           <h4 id="description" style="text-align: center; max-width: 800px;">A cubic 3D model is a geometric representation of a cube, consisting of six equal square faces joined at right angles. Each edge of the cube is of equal length, forming a symmetrical, rigid structure. The model can be textured, colored, or transparent, and it may include variations such as beveled edges or hollow interiors, depending on its intended purpose in design, animation, or engineering.</h4>
@@ -29,7 +29,7 @@ document.querySelector("#app").innerHTML = `
       <div id="images" style="display: flex; justify-content: center; flex-wrap: wrap;">
         ${media
           .map(
-            (item, index) => `<img src="${item}" alt="media${index + 1}" style="margin: 5px;" />`
+            (item, index) => `<img src="${item}" alt="media${index + 1}" style="margin: 5px; width: 200px; height: auto;" />`
           )
           .join("")}
       </div>
