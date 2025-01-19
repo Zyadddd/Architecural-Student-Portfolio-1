@@ -1,4 +1,17 @@
-import './style.css';
+//import './style.css';\
+// Create a <link> element
+var link = document.createElement('link');
+
+// Set the necessary attributes
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = './style.css'; // Adjust the path to your file
+
+// Append the <link> element to the <head>
+document.head.appendChild(link);
+
+console.log('CSS file injected!');
+
 import data from "./data/data.js"; 
 // Ensure the correct file extension is used
 //import { createThreeScene } from "./threeScene";
