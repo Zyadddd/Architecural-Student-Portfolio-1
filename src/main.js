@@ -1,4 +1,5 @@
-import "./src/style.css";
+import "./style.css";
+console.log("CSS imported!");
 import data from "./data/data.js"; // Ensure the correct file extension is used
 //import { createThreeScene } from "./threeScene";
 

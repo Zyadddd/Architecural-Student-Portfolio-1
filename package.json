@@ -9,9 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^6.0.5"
+    "vite": "^6.0.7"
   },
   "dependencies": {
+    "css-loader": "^7.1.2",
+    "parcel": "^2.13.3",
+    "style-loader": "^4.0.0",
     "three": "^0.172.0"
   }
 }
