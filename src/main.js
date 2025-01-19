@@ -1,5 +1,9 @@
-import "./style.css";
-import data from "./data/data.json"; 
+const link = document.createElement("link");
+link.rel = "stylesheet";
+link.href = "./style.css";
+document.head.appendChild(link);
+console.log("CSS imported!");
+import data from "./data/data.js"; 
 // Ensure the correct file extension is used
 //import { createThreeScene } from "./threeScene";
 
