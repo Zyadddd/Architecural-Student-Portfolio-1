@@ -150,8 +150,8 @@ img {
 }
 
 #modal-content {
-  max-width: 500%;
-  max-height: 500%;
+  max-width: 5%;
+  max-height: 5%;
   margin: auto;
   display: block;
 }
