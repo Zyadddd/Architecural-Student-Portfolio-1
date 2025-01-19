@@ -45,7 +45,9 @@ document.querySelector("#app").innerHTML = `
 
   <div id="modal" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.9);">
     <span style="position: absolute; top: 20px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer;" onclick="closeModal()">&times;</span>
-    <img id="modal-content" style="margin: auto; display: block; width: 80%; max-width: 700px;">
+    <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+      <img id="modal-content" style="max-width: 90%; max-height: 90%;">
+    </div>
   </div>
 `;
 
