@@ -3,12 +3,12 @@ import data from "./data/data";
 //import { createThreeScene } from "./threeScene";
 
 const media = [
-  "./public/A1/file1.jpg",
-  "./public/A1/file2.jpg",
-  "./public/A1/file3.jpg",
-  "./public/A1/file4.jpg",
+  "./public/A1/Rachdi_Zyad_A1.1_DSGN313_Extraction1.png",
+  "./public/A1/Rachdi_Zyad_A1.1_DSGN313_Extraction2.png",
+  "./public/A1/Rachdi_Zyad_A1.1_DSGN313_Extraction3.png",
+  "./public/A1/Rachdi_Zyad_A1.1_DSGN313_Extraction4.png",
+  "./public/A1/Rachdi_Zyad_A1.1_DSGN313.png",
 ];
-
 
 document.querySelector("#app").innerHTML = `
   <main id="container">
