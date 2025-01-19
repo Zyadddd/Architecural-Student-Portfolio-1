@@ -29,7 +29,7 @@ document.querySelector("#app").innerHTML = `
       <div id="images" style="display: flex; justify-content: center; flex-wrap: wrap;">
         ${media
           .map(
-            (item, index) => `<img src="${item}" alt="media${index + 1}" style="margin: 5px; width: 250px; height: auto;" />`
+            (item, index) => `<img src="${item}" alt="media${index + 1}" style="margin: 5px; width: 250px; height: auto; cursor: pointer;" onclick="openModal('${item}')" />`
           )
           .join("")}
       </div>
@@ -42,4 +42,21 @@ document.querySelector("#app").innerHTML = `
       <li>GitHub: <a href="${data.contact.github}">${data.contact.github}</a></li>
     </ul>
   </main>
+
+  <div id="modal" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.9);">
+    <span style="position: absolute; top: 20px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer;" onclick="closeModal()">&times;</span>
+    <img id="modal-content" style="margin: auto; display: block; width: 80%; max-width: 700px;">
+  </div>
 `;
+
+window.openModal = function(src) {
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-content');
+  modal.style.display = "block";
+  modalImg.src = src;
+}
+
+window.closeModal = function() {
+  const modal = document.getElementById('modal');
+  modal.style.display = "none";
+}
