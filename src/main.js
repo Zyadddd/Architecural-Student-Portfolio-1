@@ -1,27 +1,23 @@
 //import './style.css';\
 // Create a <link> element
-var link = document.createElement('link');
-
-// Set the necessary attributes
-link.rel = 'stylesheet';
-link.type = 'text/css';
-link.href = './style.css'; // Adjust the path to your file
-
-// Append the <link> element to the <head>
-document.head.appendChild(link);
-
-console.log('CSS file injected!');
+document.addEventListener('DOMContentLoaded', () => {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = './src/style.css'; // Correct path to your CSS file
+    document.head.appendChild(link);
+});
 
 import data from "./data/data.js"; 
 // Ensure the correct file extension is used
 //import { createThreeScene } from "./threeScene";
 
 const media = [
-  "./cubeDrawings/Rachdi_Zyad_A1.1_DSGN313.png",
-  "./cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction1.png",
-  "./cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction2.png",
-  "./cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction3.png",
-  "./cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction4.png",
+  "./public/cubeDrawings/Rachdi_Zyad_A1.1_DSGN313.png",
+  "./public/cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction1.png",
+  "./public/cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction2.png",
+  "./public/cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction3.png",
+  "./public/cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction4.png",
 ];
 
 try {
@@ -34,10 +30,11 @@ try {
 
       <section id="projects">
         <div id="project-row" style="width: 100%; display: flex; flex-direction: row; align-items: center; flex-wrap: wrap;">
-          <div class="image-container" style="width: 50%; height: auto; display: flex; justify-content: center;">
-            <img src="./cubeDrawings/A1_DSGN313.gif" alt="Project 1 Image" style="width: 75%; height: auto;" />
+          <div class="image-container" style="width: 40%; height: auto; display: flex; justify-content: center;">
+            <img src="./public/cubeDrawings/A1_DSGN313.gif" alt="Project 1 Image" style="width: 80%; height: auto;" />
           </div>
           <div id="images-description" style="width: 50%; display: flex; flex-direction: column; align-items: center;">
+            <h2 id="title" style="text-align: center;">Project 1</h2>
             <h4 id="description" style="text-align: center; max-width: 800px;">A cubic 3D model is a geometric representation of a cube, consisting of six equal square faces joined at right angles. Each edge of the cube is of equal length, forming a symmetrical, rigid structure. The model can be textured, colored, or transparent, and it may include variations such as beveled edges or hollow interiors, depending on its intended purpose in design, animation, or engineering.</h4>
           </div>
         </div>
