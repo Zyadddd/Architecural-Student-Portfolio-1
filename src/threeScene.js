@@ -8,7 +8,6 @@ export function createThreeScene(containerSelector, objPath) {
 
   // Initialize scene, camera, and renderer
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0xd3d3d3);
 
   const camera = new THREE.PerspectiveCamera(
     75,
@@ -18,7 +17,8 @@ export function createThreeScene(containerSelector, objPath) {
   );
   camera.position.set(2, 2, 5);
 
-  const renderer = new THREE.WebGLRenderer({ antialias: true });
+  const renderer = new THREE.WebGLRenderer({ antialias: true },{ alpha: true });
+  renderer.setClearColor( 0x000000, 0 ); // the default
   renderer.setSize(container.clientWidth, container.clientHeight);
   container.appendChild(renderer.domElement);
   
@@ -51,7 +51,7 @@ export function createThreeScene(containerSelector, objPath) {
       object.traverse((child) => {
         if (child.isMesh) {
           child.geometry.computeVertexNormals();
-          child.material = new THREE.MeshStandardMaterial({
+          child.material = new THREE.MeshNormalMaterial({
             color: 0x000000, // Default material color
             wireframe: false, // toggle wireframe
             transparent: false, // toggle transparency
