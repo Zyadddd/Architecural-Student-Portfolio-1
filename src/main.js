@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = './src/style.css'; // Correct path to your CSS file
+    link.href = './style.css'; // Correct path to your CSS file
     document.head.appendChild(link);
 });
 
@@ -13,9 +13,9 @@ import data from "./data/data.js";
 //import { createThreeScene } from "./threeScene";
 
 const media = [
-  "./public/cubeDrawings/Rachdi_Zyad_A1.1_DSGN313.png",
-  "./public/cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction1.png",
-  "./public/cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction2.png",
+  "./cubeDrawings/Rachdi_Zyad_A1.1_DSGN313.png",
+  "./cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction1.png",
+  "./cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction2.png",
   "./public/cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction3.png",
   "./public/cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction4.png",
 ];
