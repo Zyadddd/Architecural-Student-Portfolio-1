@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var link = document.createElement('link');
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = '/src/style.css'; // Correct path to your CSS file
+    link.href = './src/style.css'; // Correct path to your CSS file
     document.head.appendChild(link);
 });
 
