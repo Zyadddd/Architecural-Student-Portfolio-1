@@ -57,7 +57,7 @@ try {
       <section id="projects">
         <div id="project-row" style="width: 100%; display: flex; flex-direction: row; align-items: center; flex-wrap: wrap;">
           <div class="image-container" style="width: 80%; height: auto; display: flex; justify-content: center;">
-            <img src="./public/cubeDrawings/A1_DSGN313.gif" alt="Project 1 Image" style="width: 80%; height: auto;" />
+            <img src="./cubeDrawings/A1_DSGN313.gif" alt="Project 1 Image" style="width: 80%; height: auto;" />
             <div id="images-description" style="width: 50%; display: flex; flex-direction: column; align-items: start;">
             <h2 id="title" style="text-align: start;">Mindful Excess</h2>
             <h4 id="description" style="text-align: start; max-width: 550px;">My "Corpse Equis" examines the relationship between my use of technology for entertainment and my desire to remain mindful and present. These two seemingly conflicting desires encapsulate my experience of life in the digital age—a constant flux between contradictory frameworks of thought. Whole heartedly believing that happiness comes from within; I still indulge in thoughtless hedonism. As I get carried away on the ever stimulating rollercoaster of content I remember what I had originally meant to do. Life in the digital age is confusing…</h4>
@@ -111,15 +111,15 @@ window.openModal = function(src) {
     
     // Configure links for specific images
     switch(src) {
-      case "./public/treeDrawings/image1.jpg":
+      case "./treeDrawings/image1.jpg":
         modalLink.href = "https://tr.pinterest.com/pin/844493674056859/";
         modalImg.style.cursor = "pointer";
         break;
-      case "./public/treeDrawings/image2.jpg":
+      case "./treeDrawings/image2.jpg":
         modalLink.href = "https://ca.pinterest.com/pin/266205027949346314/";
         modalImg.style.cursor = "pointer";
         break;
-      case "./public/treeDrawings/image3.jpg":
+      case "./treeDrawings/image3.jpg":
         modalLink.href = "https://www.freepik.com/free-vector/different-shape-message-bubbles-blue-grey_77988500.htm";
         modalImg.style.cursor = "pointer";
         break;
