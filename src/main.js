@@ -1,4 +1,4 @@
-//import './style.css';\
+import './style.css';\
 // Create a <link> element
 document.addEventListener('DOMContentLoaded', () => {
     var link = document.createElement('link');
