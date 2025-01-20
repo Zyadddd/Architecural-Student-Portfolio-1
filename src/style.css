@@ -82,7 +82,7 @@ h3 {
   /* Center heading content */
   display: flex;
   flex-direction: row;
-  margin-block-start: 10%;
+  margin-block-start: 0;
   margin-left: 10%;
   justify-content: start;
 }
@@ -147,15 +147,16 @@ img {
 
 #description {
   /* Center description content */
-  display: grid;
-  align-items: center;
+  display: flex;
+  align-items: start;
   height: 4em;
   width: 35em;
+  justify-content: start;
   font-weight: 100;
   margin-left: 10%;
   margin-right: 20%;
-  margin-top: 10%;
-  margin-bottom: 2%;
+  margin-top: 7%;
+  margin-bottom: 10%;
 }
 
 #modal {

@@ -55,12 +55,13 @@ try {
       </section>
 
       <section id="projects">
-        <div id="project-row" style="width: 100%; display: flex; flex-direction: row; align-items: center; flex-wrap: wrap;">
+        <div id="project-row" style="width: 100%; display: flex; flex-direction: row; align-items: start; flex-wrap: wrap;">
           <div class="image-container" style="width: 80%; height: auto; display: flex; justify-content: center;">
             <img src="./cubeDrawings/A1_DSGN313.gif" alt="Project 1 Image" style="width: 80%; height: auto;" />
-            <div id="images-description" style="width: 50%; display: flex; flex-direction: column; align-items: start;">
-            <h2 id="title" style="text-align: start;">Mindful Excess</h2>
-            <h4 id="description" style="text-align: start; max-width: 550px;">My "Cadavre Equis" examines the relationship between my use of technology for entertainment and my desire to remain mindful and present. These two seemingly conflicting desires encapsulate my experience of life in the digital age—a constant flux between contradictory frameworks of thought. Whole heartedly believing that happiness comes from within; I still indulge in thoughtless hedonism. As I get carried away on the ever stimulating rollercoaster of content I remember what I had originally meant to do. Life in the digital age is confusing…</h4>
+            <div id="images-container" style="width: 50%; display: flex; flex-direction: column; align-items: start; lelft-margin: 10%">
+              <h2 id="title" style="flex-warp: warp; text-align: start;">Mindful Excess</h2>
+              <h4 id="description" style="justify-content: center; flex-warp: warp; text-align: start; max-width: 100%;">My "Cadavre Equis" examines the relationship between my use of technology for entertainment and my desire to remain mindful and present. These two seemingly conflicting desires encapsulate my experience of life in the digital age—a constant flux between contradictory frameworks of thought. Whole heartedly believing that happiness comes from within; I still indulge in thoughtless hedonism. As I get carried away on the ever stimulating rollercoaster of content I remember what I had originally meant to do. Life in the digital age is confusing…</h4>
+
           </div>
         </div>
           
