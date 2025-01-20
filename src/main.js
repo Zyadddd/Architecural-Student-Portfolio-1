@@ -59,8 +59,8 @@ try {
           <div class="image-container" style="width: 80%; height: auto; display: flex; justify-content: center;">
             <img src="./public/cubeDrawings/A1_DSGN313.gif" alt="Project 1 Image" style="width: 80%; height: auto;" />
             <div id="images-description" style="width: 50%; display: flex; flex-direction: column; align-items: start;">
-            <h2 id="title" style="text-align: start;">Project 1</h2>
-            <h4 id="description" style="text-align: start; max-width: 800px;">A cubic 3D model is a geometric representation of a cube, consisting of six equal square faces joined at right angles. Each edge of the cube is of equal length, forming a symmetrical, rigid structure. The model can be textured, colored, or transparent, and it may include variations such as beveled edges or hollow interiors, depending on its intended purpose in design, animation, or engineering.</h4>
+            <h2 id="title" style="text-align: start;">Mindful Excess</h2>
+            <h4 id="description" style="text-align: start; max-width: 550px;">My "Corpse Equis" examines the relationship between my use of technology for entertainment and my desire to remain mindful and present. These two seemingly conflicting desires encapsulate my experience of life in the digital age—a constant flux between contradictory frameworks of thought. Whole heartedly believing that happiness comes from within; I still indulge in thoughtless hedonism. As I get carried away on the ever stimulating rollercoaster of content I remember what I had originally meant to do. Life in the digital age is confusing…</h4>
           </div>
         </div>
           
@@ -88,10 +88,12 @@ try {
    
     </main>
 
-    <div id="modal" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.9);">
+    <div id="modal" style="display: none; position: fixed; z-index: 1; left: 0; top: 1; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.9);">
       <span style="position: absolute; top: 20px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer;" onclick="closeModal()">&times;</span>
       <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
-        <img id="modal-content" style="max-width: 75%; max-height: 75%;">
+        <a id="modal-link" href="" target="_blank">
+          <img id="modal-content" style="max-width: 75%; max-height: 75%;">
+        </a>
       </div>
     </div>
   `;
@@ -103,8 +105,28 @@ window.openModal = function(src) {
   try {
     const modal = document.getElementById('modal');
     const modalImg = document.getElementById('modal-content');
+    const modalLink = document.getElementById('modal-link');
     modal.style.display = "block";
     modalImg.src = src;
+    
+    // Configure links for specific images
+    switch(src) {
+      case "./public/treeDrawings/image1.jpg":
+        modalLink.href = "https://tr.pinterest.com/pin/844493674056859/";
+        modalImg.style.cursor = "pointer";
+        break;
+      case "./public/treeDrawings/image2.jpg":
+        modalLink.href = "https://ca.pinterest.com/pin/266205027949346314/";
+        modalImg.style.cursor = "pointer";
+        break;
+      case "./public/treeDrawings/image3.jpg":
+        modalLink.href = "https://www.freepik.com/free-vector/different-shape-message-bubbles-blue-grey_77988500.htm";
+        modalImg.style.cursor = "pointer";
+        break;
+      default:
+        modalLink.href = "javascript:void(0)";
+        modalImg.style.cursor = "default";
+    }
   } catch (error) {
     console.error("Error opening modal:", error);
   }

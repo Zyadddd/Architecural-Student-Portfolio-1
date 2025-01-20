@@ -100,7 +100,7 @@ h3 {
   /* Row layout for projects */
   display: flex;
   justify-content: center;
-  padding-top: 7em;
+  padding-top: 10em;
   padding-bottom: 6em;
 }
 
@@ -122,12 +122,12 @@ h3 {
 
 #images {
   /* Center image container */
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 10px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1%;
+  margin-top: 3%;
 }
 
 img {
@@ -154,8 +154,8 @@ img {
   font-weight: 100;
   margin-left: 10%;
   margin-right: 20%;
-  margin-top: auto;
-  margin-bottom: 20%;
+  margin-top: 10%;
+  margin-bottom: 2%;
 }
 
 #modal {
@@ -195,7 +195,7 @@ img {
     display: block;
     flex-direction:row-reverse;
     align-items: center;
-    padding: 4rem;
+    padding: 2%;
   }
 
   #footer-items p {
