@@ -9,8 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 import data from "./data/data.js"; 
-// Ensure the correct file extension is used
-//import { createThreeScene } from "./threeScene";
+import { createThreeScene } from "./threeScene.js";  // Fix the import path and uncomment
 
 const media = [
   "./cubeDrawings/Rachdi_Zyad_A1.1_DSGN313.png",
@@ -49,13 +48,14 @@ const treeDrawings2 = [
 const A2Images = [
   "/A2/DSGN313_A2-1.png",
   "/A2/DSGN313_A2-12.png",
-  "/A2/DSGN313_A2-13.png"
+  "/A2/DSGN313_A2-13.png",
+  "/A2/DSGN313_A2-5-1.png"
 ];
 
 const A2Models = [
-  "/A2/3.obj",
-  "/A2/2.obj",
-  "/A2/1.obj"
+  "/3DModels/project2/3.obj",
+  "/3DModels/project2/2.obj",
+  "/3DModels/project2/1.obj"
 ];
 
 try {
@@ -89,13 +89,13 @@ try {
 
       <section style="width: 100%; display: flex; flex-direction: column; align-items: center;" class="grid-section">
         <h3 style="margin-bottom: 1rem;">Used Images</h3>
-        <div style="width: 100%; max-width: 1200px; display: flex; justify-content: center;">
-          <div class="grid grid-regular masonry" style="margin: 0 auto;">
+        <div style="width: 100%; overflow: hidden;">
+          <div class="grid grid-regular">
             ${[...treeDrawings, ...treeDrawings2]
               .map(
                 (item, index) => `
                 <div class="grid-item">
-                  <img src="${item}" alt="treeDrawing${index + 1}" style="width: 100%; cursor: pointer;" onclick="openModal('${item}')" />
+                  <img src="${item}" alt="treeDrawing${index + 1}" style="cursor: pointer;" onclick="openModal('${item}')" />
                 </div>`
               )
               .join("")}
@@ -106,27 +106,23 @@ try {
       <hr class="section-divider">
 
       <section style="width: 100%; display: flex; flex-direction: column; align-items: center;" class="grid-section">
-        <h3 style="margin-bottom: 1rem;">A2 Project</h3>
-        <div style="width: 100%; max-width: 1200px; display: flex; justify-content: center;">
-          <div class="grid grid-a2 masonry" style="margin: 0 auto;">
-            ${A2Images
-              .map(
-                (item, index) => `
-                <div class="grid-item">
-                  <img src="${item}" alt="A2-image${index + 1}" style="width: 100%; cursor: pointer;" onclick="openModal('${item}')" />
-                </div>`
-              )
-              .join("")}
-          </div>
-        </div>
-      </section>
-
-      <section style="width: 100%; display: flex; flex-direction: column; align-items: center;" class="grid-section">
-        <h3 style="margin-bottom: 1rem;">A2 3D Models</h3>
-        <div class="three-model" style="width: 100%; max-width: 1200px; display: flex; justify-content: center; gap: 3rem;">
-          <div id="model1" class="model-container"></div>
-          <div id="model2" class="model-container"></div>
-          <div id="model3" class="model-container"></div>
+        <h1 style="margin-bottom: 1rem;">A2 Project</h1>
+        <div style="width: 100%; max-width: 1200px;">
+          ${[0, 1, 2].map((index) => `
+            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 2rem; gap: 2rem;">
+              <div class="model-container" id="model${index + 1}"></div>
+              <div class="image-container" style="width: 500px;">
+                <img src="${A2Images[index]}" alt="A2-image${index + 1}" style="width: 100%; cursor: pointer;" onclick="openModal('${A2Images[index]}')" />
+              </div>
+            </div>
+          `).join("")}
+          ${A2Images.length > 3 ? `
+            <div style="display: flex; justify-content: center; margin-top: 2rem;">
+              <div class="image-container" style="width: 850px;">
+                <img src="${A2Images[3]}" alt="A2-image4" style="width: 100%; cursor: pointer;" onclick="openModal('${A2Images[3]}')" />
+              </div>
+            </div>
+          ` : ''}
         </div>
       </section>
     </main>
@@ -157,7 +153,7 @@ try {
 
     // Initialize Three.js scenes
     A2Models.forEach((modelPath, index) => {
-      initThreeScene(`model${index + 1}`, modelPath);
+      createThreeScene(`#model${index + 1}`, modelPath);  // Change to use createThreeScene
     });
   });
 
