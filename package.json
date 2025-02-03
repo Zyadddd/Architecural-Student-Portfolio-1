@@ -9,12 +9,25 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^6.0.7"
+    "vite": "^6.0.9"
   },
   "dependencies": {
     "css-loader": "^7.1.2",
     "parcel": "^2.13.3",
     "style-loader": "^4.0.0",
     "three": "^0.172.0"
-  }
+  },
+  "description": "![alt text](/README-Images/image.png)  \r [Website Preview for Template 1](https://architecural-student-portfolio-1.vercel.app/)  \r [Github Link for Template 1](https://github.com/jzmasiv/Architecural-Student-Portfolio-1)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zyadddd/Architecural-Student-Portfolio-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zyadddd/Architecural-Student-Portfolio-1/issues"
+  },
+  "homepage": "https://github.com/Zyadddd/Architecural-Student-Portfolio-1#readme"
 }
