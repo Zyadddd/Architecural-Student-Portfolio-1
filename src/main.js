@@ -1,12 +1,4 @@
-import './style.css';
-// Create a <link> element
-document.addEventListener('DOMContentLoaded', () => {
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = './style.css'; // Correct path to your CSS file
-    document.head.appendChild(link);
-});
+import '/src/style.css';
 
 import data from "./data/data.js"; 
 import { createThreeScene } from "./threeScene.js";  // Fix the import path and uncomment
