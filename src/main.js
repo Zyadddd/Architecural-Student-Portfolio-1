@@ -1,4 +1,4 @@
-import '/src/style.css';
+import './style.css';
 
 import data from "./data/data.js"; 
 import { createThreeScene } from "./threeScene.js";  // Fix the import path and uncomment
