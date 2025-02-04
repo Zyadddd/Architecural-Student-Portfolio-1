@@ -1,11 +1,13 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/a2project", "destination": "/src/a2project.html" },
-    { "source": "/assets/:path*", "destination": "/assets/:path*" },
-    { "source": "/src/:path*", "destination": "/src/:path*" },
-    { "source": "/:path*", "destination": "/:path*" }
+  "version": 2,
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "src/**", "use": "@vercel/static" }
   ],
-  "cleanUrls": true,
-  "trailingSlash": false
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/a2project", "dest": "/src/a2project.html" },
+    { "src": "/src/(.*)", "dest": "/src/$1" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
 }
