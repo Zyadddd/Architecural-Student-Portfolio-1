@@ -191,8 +191,6 @@ img {
   position: relative;
 }
 
-position: relative;
-}
 
 #description {
   /* Center description content */
@@ -230,8 +228,6 @@ position: relative;
   display: block;
 }
 
-#modal span {
-}
 
 .grid {
   width: fit-content;
