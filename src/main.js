@@ -69,10 +69,11 @@ try {
       <section id="projects">
         <div class="project-container" style="width: 100%; max-width: 1200px; margin: 0 auto;">
           <div id="project-row" style="width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center;">
-            <div class="image-container" style="width: 80%; display: flex; justify-content: center; align-items: start;">
+            <div class="image-container" style="width: 100%; display: flex; justify-content: center; align-items: start;">
               <img src="./cubeDrawings/A1_DSGN313.gif" alt="Project 1 Image" style="width: 50%; height: auto;" />
               <div id="images-container" style="width: 40%; padding-left: 5%;">
                 <h2 id="title">Mindful Excess</h2>
+                <br>
                 <h4 id="description">My "Cadavre Equis" examines the relationship between my use of technology for entertainment and my desire to remain mindful and present. These two seemingly conflicting desires encapsulate my experience of life in the digital age—a constant flux between contradictory frameworks of thought. Whole heartedly believing that happiness comes from within; I still indulge in thoughtless hedonism. As I get carried away on the ever stimulating rollercoaster of content I remember what I had originally meant to do. Life in the digital age is confusing…</h4>
               </div>
             </div>
@@ -104,35 +105,8 @@ try {
       </section>
 
       <hr class="section-divider">
-
-      <section style="width: 100%; display: flex; flex-direction: column; align-items: center;" class="grid-section">
-        <h1 style="margin-bottom: 1rem;">A2 Project</h1>
-        <div style="width: 100%; max-width: 1200px;">
-          ${[0, 1, 2].map((index) => `
-            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 2rem; gap: 2rem;">
-              <div class="model-container" id="model${index + 1}"></div>
-              <div class="image-container" style="width: 500px;">
-                <img src="${A2Images[index]}" alt="A2-image${index + 1}" style="width: 100%; cursor: pointer;" onclick="openModal('${A2Images[index]}')" />
-              </div>
-            </div>
-          `).join("")}
-          ${A2Images.length > 3 ? `
-            <div style="display: flex; justify-content: center; margin-top: 2rem;">
-              <div class="image-container" style="width: 850px;">
-                <img src="${A2Images[3]}" alt="A2-image4" style="width: 100%; cursor: pointer;" onclick="openModal('${A2Images[3]}')" />
-              </div>
-            </div>
-          ` : ''}
-        </div>
-      </section>
+      <div class="nav-arrow right" onclick="window.location.href='./src/a2project.html'">&rarr;</div>
     </main>
-
-    <div id="modal" style="display: none; position: fixed; z-index: 1; left: 0; top: 1; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9);">
-      <span style="position: absolute; top: 20px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer;" onclick="closeModal()">&times;</span>
-      <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
-        <img id="modal-content" style="max-width: 75%; max-height: 75%;">
-      </div>
-    </div>
   `;
 
   // Initialize Masonry
