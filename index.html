@@ -22,71 +22,11 @@
         }
       }
     </script>
-    <style>
-      .grid {
-        display: flex;
-        margin-left: -30px; /* gutter size offset */
-        width: auto;
-      }
-
-      .grid-item {
-        width: 200px;
-        margin-bottom: 30px;
-        margin-left: 30px; /* gutter size */
-      }
-
-      .grid-item img {
-        display: block;
-        max-width: 100%;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-      }
-      #app {
-        width: 100%;
-        max-width: 1400px;
-      }
-    </style>
   </head>
   <body>
     <!-- Root element where the application will be rendered -->
     <div id="app"></div>
     <!-- Imports the main JavaScript module for the application -->
     <script type="module" src="./src/main.js"></script>
-    <script>
-      try {
-        document.querySelector("#app").innerHTML = `
-          <main id="container">
-            <section id="heading">
-              <h1>${data.name}</h1>
-              <p>${data.bio}</p>
-            </section>
-
-            <section id="projects">
-              <div id="grid" class="grid">
-                ${media
-                  .map(
-                    (item, index) => `<div class="grid-item"><img src="${item}" alt="media${index + 1}" /></div>`
-                  )
-                  .join("")}
-              </div>
-            </section>
-          </main>
-        `;
-
-        // Initialize Masonry
-        var grid = document.querySelector('.grid');
-        var msnry = new Masonry(grid, {
-          itemSelector: '.grid-item',
-          columnWidth: '.grid-item',
-          percentPosition: true
-        });
-      } catch (error) {
-        console.error("Error rendering the app:", error);
-      }
-    </script>
   </body>
 </html>
