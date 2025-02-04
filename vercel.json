@@ -8,5 +8,6 @@
     { "src": "/", "dest": "/dist/index.html" },
     { "src": "/a2project", "dest": "/dist/src/a2project.html" },
     { "src": "/(.*)", "dest": "/dist/$1" }
-  ]
+  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
