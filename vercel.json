@@ -2,7 +2,10 @@
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
     { "source": "/a2project", "destination": "/src/a2project.html" },
-    { "source": "/(.*)", "destination": "/$1" }
+    { "source": "/assets/:path*", "destination": "/assets/:path*" },
+    { "source": "/src/:path*", "destination": "/src/:path*" },
+    { "source": "/:path*", "destination": "/:path*" }
   ],
-  "cleanUrls": true
+  "cleanUrls": true,
+  "trailingSlash": false
 }
