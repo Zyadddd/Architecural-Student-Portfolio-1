@@ -89,7 +89,7 @@ h2 {
 
 h3 {
   /* Heading font size */
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 h4 {
@@ -104,8 +104,8 @@ h4 {
   flex-direction: row;
   margin-block-start: 0;
   margin-left: 0;  /* Remove left margin */
-  justify-content: center;  /* Center the title */
-  text-align: center;  /* Center the text */
+  justify-content: start;  /* Center the title */
+  text-align: start;  /* Center the text */
   width: 100%;  /* Full width */
 }
 
@@ -117,6 +117,7 @@ h4 {
   justify-content: center;
   margin-bottom: 5em;  /* Reduced from 10em */
   width: 100%;
+  text-align: center;
 }
 
 #project-row {
@@ -135,16 +136,30 @@ h4 {
 }
 
 .model-container {
-  width: 350px;
-  height: 350px;
+  width: 375px;
+  height: 375px;
   background: #111;
-  border-radius: 4px;
   overflow: hidden;
+  flex-shrink: 0;
+}
+
+.image-container {
+  height: 375px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  flex-shrink: 0;
 }
 
 .image-container img {
+  height: 375px;
+  width: auto;
+  max-width: none;
   border-radius: 4px;
   transition: transform 0.3s ease;
+  object-fit: contain;  /* Changed from cover to contain */
+  background: #111;
 }
 
 .image-container img:hover {
@@ -181,7 +196,7 @@ position: relative;
 
 #description {
   /* Center description content */
-  display: flex;
+  display: row;
   align-items: start;
   height: auto;
   width: 35em;
@@ -288,6 +303,33 @@ position: relative;
 
 .grid-section {
   margin-bottom: 2rem;  /* Reduced from 4rem */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-arrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3em;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 100;
+}
+
+.nav-arrow:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-arrow.right {
+  right: 2rem;
+}
+
+.nav-arrow.left {
+  left: 2rem;
 }
 
 @media screen and (max-width: 768px) {
