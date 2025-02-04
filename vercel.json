@@ -1,14 +1,12 @@
 {
   "version": 2,
+  "outputDirectory": "dist",
   "builds": [
-    { "src": "*.html", "use": "@vercel/static" },
-    { "src": "src/**", "use": "@vercel/static" }
+    { "src": "dist/**/*", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/a2project", "dest": "/src/a2project.html" },
-    { "src": "/src/(.*)", "dest": "/src/$1" },
-    { "src": "/(.*)", "dest": "/$1" }
-  ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+    { "src": "/", "dest": "/dist/index.html" },
+    { "src": "/a2project", "dest": "/dist/src/a2project.html" },
+    { "src": "/(.*)", "dest": "/dist/$1" }
+  ]
 }
