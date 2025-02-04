@@ -9,5 +9,6 @@
     { "src": "/a2project", "dest": "/src/a2project.html" },
     { "src": "/src/(.*)", "dest": "/src/$1" },
     { "src": "/(.*)", "dest": "/$1" }
-  ]
+  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
