@@ -24,9 +24,9 @@ try {
       </section>
 
     <main id="container" style="padding-top: 10em;">
-      <div class="nav-arrow left" onclick="window.location.href='../index.html'">&larr;</div>
+      <div class="nav-arrow left" onclick="window.location.href='/'">&larr;</div>
       
-      <section id="projects" style="width: 100%; display: flex; flex-direction: column; align-items: center;" class="grid-section">
+      <section id="projects" style="width: 100%; display: flex; flex-direction: start; align-items: center;" class="grid-section">
         <div style="width: 100%; max-width: 1050px; margin: auto%; text-align: start;">
           <h2 style="text-align: left; margin-bottom: 2rem;">A2 Project</h2>
           <h3 id="description" style="text-align: left;">Through my experiments exporting low-poly Blender models to Rhino3D and
@@ -47,7 +47,7 @@ try {
             <b>Detail and Complexity</b>
             <br>
             Converting high-poly meshes (e.g., Yoshi's 10k+ faces) to NURBS surfaces in
-            Rhino failed entirely due to computational limits, while low-poly models (pavilion)
+            Rh1ino failed entirely due to computational limits, while low-poly models (pavilion)
             produced overly complicated surfaces. Quads maintained clean consistent
             topology during export, enabling predictable subdivisions. Triangulated meshes
             were more difficult to subdivide cleanly, Scale and symmetry matter. Symmetric,

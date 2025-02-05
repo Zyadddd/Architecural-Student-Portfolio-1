@@ -1,0 +1,6 @@
+{
+``  "rewrites": [
+    { "source": "/src/a2project.html", "destination": "/src/a2project.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
