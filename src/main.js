@@ -4,7 +4,7 @@ import data from "./data/data.js";
 import { createThreeScene } from "./threeScene.js";  // Fix the import path and uncomment
 
 const media = [
-  "/cubeDrawings/Rachdi_Zyad_A1.1_DSGN313.png",
+  "./cubeDrawings/Rachdi_Zyad_A1.1_DSGN313.png",
   "./cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction1.png",
   "./cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction2.png",
   "./cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction3.png",
@@ -38,16 +38,16 @@ const treeDrawings2 = [
 ];
 
 const A2Images = [
-  "/A2/DSGN313_A2-1.png",
-  "/A2/DSGN313_A2-12.png",
-  "/A2/DSGN313_A2-13.png",
-  "/A2/DSGN313_A2-5-1.png"
+  "./A2/DSGN313_A2-1.png",
+  "./A2/DSGN313_A2-12.png",
+  "./A2/DSGN313_A2-13.png",
+  "./A2/DSGN313_A2-5-1.png"
 ];
 
 const A2Models = [
-  "/3DModels/project2/3.obj",
-  "/3DModels/project2/2.obj",
-  "/3DModels/project2/1.obj"
+  "./3DModels/project2/3.obj",
+  "./3DModels/project2/2.obj",
+  "./3DModels/project2/1.obj"
 ];
 
 try {
