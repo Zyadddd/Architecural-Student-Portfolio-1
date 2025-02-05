@@ -229,7 +229,6 @@ img {
   transform: translate(-50%, -50%);
 }
 
-<<<<<<< HEAD
 #modal span {
   position: absolute;
   top: 15px;
@@ -239,8 +238,6 @@ img {
   font-weight: bold;
   cursor: pointer;
 }
-=======
->>>>>>> 946d1c2c2083df83eced3157141e9d08b64a3142
 
 .grid {
   width: fit-content;
