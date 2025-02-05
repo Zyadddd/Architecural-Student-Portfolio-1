@@ -97,7 +97,11 @@ try {
       </section>
 
       <hr class="section-divider">
+<<<<<<< HEAD
       <div class="nav-arrow right" onclick="window.location.href='/src/a2project.html'">&rarr;</div>
+=======
+      <div class="nav-arrow right" onclick="window.location.href='a2project.html'">&rarr;</div>
+>>>>>>> 946d1c2c2083df83eced3157141e9d08b64a3142
     </main>
   `;
 

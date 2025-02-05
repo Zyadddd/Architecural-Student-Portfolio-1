@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
 ``  "rewrites": [
     { "source": "/src/a2project.html", "destination": "/src/a2project.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
+=======
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+  "public": true
+>>>>>>> 946d1c2c2083df83eced3157141e9d08b64a3142
 }
