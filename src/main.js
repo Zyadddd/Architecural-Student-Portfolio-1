@@ -4,7 +4,7 @@ import data from "./data/data.js";
 import { createThreeScene } from "./threeScene.js";  // Fix the import path and uncomment
 
 const media = [
-  "./cubeDrawings/Rachdi_Zyad_A1.1_DSGN313.png",
+  "/cubeDrawings/Rachdi_Zyad_A1.1_DSGN313.png",
   "./cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction1.png",
   "./cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction2.png",
   "./cubeDrawings/Rachdi_Zyad_A1.1_DSGN313_Extraction3.png",
@@ -97,7 +97,7 @@ try {
       </section>
 
       <hr class="section-divider">
-      <div class="nav-arrow right" onclick="window.location.href='/a2project'">&rarr;</div>
+      <div class="nav-arrow right" onclick="window.location.href='a2project.html'">&rarr;</div>
     </main>
   `;
 
