@@ -1,8 +1,4 @@
 {
-  "version": 2,
-  "outputDirectory": ".",
-  "public": true,
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+  "public": true
 }
