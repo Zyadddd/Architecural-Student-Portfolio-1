@@ -26,14 +26,14 @@ try {
     <main id="container" style="padding-top: 10em;">
       <div class="nav-arrow left" onclick="window.location.href='../index.html'">&larr;</div>
       
-      <section id="projects" style="width: 100%; display: flex; flex-direction: column; align-items: center;" class="grid-section">
-        <div style="width: 100%; max-width: 1050px; margin: auto%; text-align: start;">
+      <section id="projects" style="width: 100%; display: flex; flex-direction: column; align-items: start;" class="grid-section">
+        <div style="width: 100%; max-width: 1050px; margin: 0 auto; text-align: left;">
           <h2 style="text-align: left; margin-bottom: 2rem;">A2 Project</h2>
-          <h3 id="description" style="text-align: left;">Through my experiments exporting low-poly Blender models to Rhino3D and
+          <h3 style="text-align: left; width: 100%; margin-bottom: 1rem;">Through my experiments exporting low-poly Blender models to Rhino3D and
           applying SubD/NURBS conversions as well as mesh modifications, I explored how
           file formats, import settings, and geometry types impact topology, form, face count
           and volume</h3>
-          <h4 id="description" style:"text-align: start; justify-content: start;"> 
+          <h4 style="text-align: left; width: 100%;"> 
             <br>
             <b>Format</b>
             <br>

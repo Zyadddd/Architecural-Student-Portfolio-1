@@ -1,12 +1,4 @@
 import './style.css';
-// Create a <link> element
-document.addEventListener('DOMContentLoaded', () => {
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = './style.css'; // Correct path to your CSS file
-    document.head.appendChild(link);
-});
 
 import data from "./data/data.js"; 
 import { createThreeScene } from "./threeScene.js";  // Fix the import path and uncomment
@@ -46,16 +38,16 @@ const treeDrawings2 = [
 ];
 
 const A2Images = [
-  "/A2/DSGN313_A2-1.png",
-  "/A2/DSGN313_A2-12.png",
-  "/A2/DSGN313_A2-13.png",
-  "/A2/DSGN313_A2-5-1.png"
+  "./A2/DSGN313_A2-1.png",
+  "./A2/DSGN313_A2-12.png",
+  "./A2/DSGN313_A2-13.png",
+  "./A2/DSGN313_A2-5-1.png"
 ];
 
 const A2Models = [
-  "/3DModels/project2/3.obj",
-  "/3DModels/project2/2.obj",
-  "/3DModels/project2/1.obj"
+  "./3DModels/project2/3.obj",
+  "./3DModels/project2/2.obj",
+  "./3DModels/project2/1.obj"
 ];
 
 try {

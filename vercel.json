@@ -1,8 +1,7 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/a2project", "destination": "/src/a2project.html" },
-    { "source": "/(.*)", "destination": "/$1" }
+    { "source": "/a2project", "destination": "/a2project.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
-  "cleanUrls": true
+  "public": true
 }
