@@ -29,8 +29,8 @@ try {
         </div>
       </section>
 
-      <div class="nav-arrow left" onclick="window.location.href='./a2project.html'">&larr;</div>
-      <div class="nav-arrow right" onclick="window.location.href='./a4project.html'">&rarr;</div>
+      <div class="nav-arrow left" onclick="window.location.href='a2project.html'">&larr;</div>
+      <div class="nav-arrow right" onclick="window.location.href='a4project.html'">&rarr;</div>
     </main>
   `;
 } catch (error) {
