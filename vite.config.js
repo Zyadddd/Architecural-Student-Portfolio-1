@@ -7,7 +7,7 @@ export default defineConfig({
       input: {
         main: 'index.html',
         a2project: 'src/a2project.html',
-        a3project: 'src/a3project.html' // Ensure A3 Project is correctly configured
+        a3project: 'src/a3project.html' // Reverted to the previous state
       }
     }
   }
