@@ -57,8 +57,8 @@ try {
         <img src="/A4/313_A4_Framing-images-9.jpg" alt="Additional Image 2" style="width: 100%; height: auto; object-fit: contain;">
       </section>
 
-      <div class="nav-arrow left" onclick="window.location.href='./page3.html'">&larr;</div>
-      <div class="nav-arrow right" onclick="window.location.href='./project5.html'">&rarr;</div>
+      <div class="nav-arrow left" onclick="window.location.href='a3project.html'">&larr;</div>
+      <div class="nav-arrow right" onclick="window.location.href='a5project.html'">&rarr;</div>
     </main>
   `;
 
