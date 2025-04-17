@@ -6,7 +6,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
-        a2project: 'src/a2project.html'
+        a2project: 'src/a2project.html',
+        a3project: 'src/a3project.html' // Ensure A3 Project is correctly configured
       }
     }
   }
