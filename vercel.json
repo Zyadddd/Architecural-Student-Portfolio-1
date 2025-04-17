@@ -2,6 +2,7 @@
   "rewrites": [
     { "source": "/a2project", "destination": "/a2project.html" },
     { "source": "/a3project", "destination": "/a3project.html" },
+    { "source": "/a4project", "destination": "/a4project.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ],
   "public": true
