@@ -20,7 +20,7 @@ try {
       
       <section id="text-section" style="width: 100%; max-width: 1050px; margin: 0 auto; text-align: left; padding-top: 2rem;">
         <h2 style="text-align: left; margin-bottom: 2rem;">A5 Project
-        <br>Explore the GROWTH</h2>
+        <br><a href="https://www.spatial.io/s/ExploreTheGROWTH-67ff25597096556e2726a373?share=6790629960064004262" target="_blank" style="color: inherit; text-decoration: underline;">Explore the GROWTH</a></h2>
         <h3 style="text-align: left; width: 100%; margin-bottom: 1rem;">Explore the GROWTH is a metaverse that explores themes of consumption briding my corpse with my final studio project.</h3>
       </section>
 
