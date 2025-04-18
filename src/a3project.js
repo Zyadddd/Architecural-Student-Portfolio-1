@@ -18,17 +18,17 @@ try {
         <h2 style="text-align: left; margin-bottom: 2rem;">A3 Project</h2>
         <h3 style="text-align: left; width: 100%; margin-bottom: 1rem;">The Guilt Sponge, embodies the unsustainable cycle of digital indulgence and self-aware guilt by revealing the dichotomy between mindful and mindlessness.</h3>
         <br>
-        <em>Form</em>
-        <h4> A parasitic headpiece resembling a living, bioluminescent jellyfish Its translucent tendrils burrow into the user’s scalp, extracting dopamine each time they indulge in mindless entertainment (scrolling, binge-watching).</h4>
+        <h4>Form</h4>
+        <h5> A parasitic headpiece resembling a living, bioluminescent jellyfish Its translucent tendrils burrow into the user’s scalp, extracting dopamine each time they indulge in mindless entertainment (scrolling, binge-watching).</h5>
         <br>
-        <em>Dopamine Drain</em>
-        <h4>As the user consumes content, the crown glows brighter, its tendrils pulsating with stolen neurotransmitters.</h4>
+        <h4>Dopamine Drain</h4>
+        <h5>As the user consumes content, the crown glows brighter, its tendrils pulsating with stolen neurotransmitters.</h5>
         <br>
-        <em>Mindful Depletion</em>
-        <h4>Once drained, the user is confronted with their guilt and consciousness, forcing them into a state of mindfulness.</h4>
+        <h4>Mindful Depletion</h4>
+        <h5>Once drained, the user is confronted with their guilt and consciousness, forcing them into a state of mindfulness.</h5>
         <br>
-        <em>Repeat</em>
-        <h4> The the energy this parasite drains is then converted into electricity charging the users device allowing this cycle to be perpetuated.</h4>
+        <h4>Repeat</h4>
+        <h5> The energy this parasite drains is then converted into electricity charging the user's device allowing this cycle to be perpetuated.</h5>
 
       </section>
 
