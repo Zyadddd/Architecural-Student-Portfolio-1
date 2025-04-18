@@ -19,7 +19,8 @@ try {
       </section>
       
       <section id="text-section" style="width: 100%; max-width: 1050px; margin: 0 auto; text-align: left; padding-top: 2rem;">
-        <h2 style="text-align: left; margin-bottom: 2rem;">A5 Project</h2>
+        <h2 style="text-align: left; margin-bottom: 2rem;">A5 Project
+        <br>Explore the GROWTH</h2>
         <h3 style="text-align: left; width: 100%; margin-bottom: 1rem;">Explore the GROWTH is a metaverse that explores themes of consumption briding my corpse with my final studio project.</h3>
       </section>
 
