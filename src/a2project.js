@@ -24,7 +24,8 @@ try {
       </section>
 
     <main id="container" style="padding-top: 10em;">
-      <div class="nav-arrow left" onclick="window.location.href='../index.html'">&larr;</div>
+      <div class="nav-arrow left" onclick="window.location.href='/index.html'">&larr;</div>
+      <div class="nav-arrow right" onclick="window.location.href='a3project.html'">&rarr;</div>
       
       <section id="projects" style="width: 100%; display: flex; flex-direction: column; align-items: start;" class="grid-section">
         <div style="width: 100%; max-width: 1050px; margin: 0 auto; text-align: left;">

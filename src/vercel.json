@@ -3,6 +3,7 @@
     { "source": "/a2project", "destination": "/a2project.html" },
     { "source": "/a3project", "destination": "/a3project.html" },
     { "source": "/a4project", "destination": "/a4project.html" },
+    { "source": "/a5project", "destination": "/a5project.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ],
   "public": true

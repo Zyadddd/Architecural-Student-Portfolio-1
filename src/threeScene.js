@@ -15,7 +15,7 @@ export function createThreeScene(containerSelector, objPath) {
     0.1,
     1000
   );
-  camera.position.set(2, 2, 5);
+  camera.position.set(0, 1, 3); // Adjusted to point toward the model
 
   const renderer = new THREE.WebGLRenderer({ antialias: true },{ alpha: true });
   renderer.setClearColor( 0x000000, 0 ); // the default
@@ -39,7 +39,7 @@ export function createThreeScene(containerSelector, objPath) {
   const controls = new OrbitControls(camera, renderer.domElement);
   controls.enableDamping = true; // Smooth rotation
   controls.dampingFactor = 0.05;
-  controls.target.set(0, 0, 0);
+  controls.target.set(0, 0, 0); // Ensure the controls target the model
   controls.update();
 
   // Load OBJ file

@@ -97,7 +97,7 @@ try {
       </section>
 
       <hr class="section-divider">
-      <div class="nav-arrow right" onclick="window.location.href='./src/a2project.html'">&rarr;</div>
+      <div class="nav-arrow right" onclick="window.location.href='/src/a2project.html'">&rarr;</div>
     </main>
   `;
 
